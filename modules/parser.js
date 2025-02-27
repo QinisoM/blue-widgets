@@ -5,7 +5,7 @@ var typeFnDefault = function (el) {
   if (!el) return null
   if (!(n instanceof Element)) return null
 
-  return el.getAttribute('data-widget') ?? null
+  return el?.getAttribute('data-widget') ?? null
 }
 
 export function parse (el, pattern, typeFn) {
