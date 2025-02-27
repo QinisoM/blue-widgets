@@ -3,7 +3,7 @@ import { raf } from './raf'
 
 var typeFnDefault = function (el) {
   if (!el) return null
-  if (!(n instanceof Element)) return null
+  if (!(el instanceof Element)) return null
 
   return el?.getAttribute('data-widget') ?? null
 }
